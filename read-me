@@ -1,0 +1,35 @@
+SORTING METHODS 
+
+Simple Sorting Algorithms 
+
+1. insertion sort - arranging a handful of cards
+Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is like sorting playing cards in your hands. You split the cards into two groups: the sorted cards and the unsorted cards. Then, you pick a card from the unsorted group and put it in the right place in the sorted group.
+
+We start with second element of the array as first element in the array is assumed to be sorted.
+Compare second element with the first element and check if the second element is smaller then swap them.
+Move to the third element and compare it with the first two elements and put at its correct position
+Repeat until the entire array is sorted.
+
+2. selection sort - select the minimum value in each iteration and place it on the left side of the array 
+
+Selection Sort is a comparison-based sorting algorithm. It sorts an array by repeatedly selecting the smallest (or largest) element from the unsorted portion and swapping it with the first unsorted element. This process continues until the entire array is sorted.
+
+First we find the smallest element and swap it with the first element. This way we get the smallest element at its correct position.
+Then we find the smallest among remaining elements (or second smallest) and move it to its correct position by swapping.
+We keep doing this until we get all elements moved to correct position.
+
+3. Bubble sort - sort from right to left by a bubble of two. move the greater number to the right side
+
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity are quite high.
+
+We sort the array using multiple passes. After the first pass, the maximum element goes to end (its correct position). Same way, after second pass, the second largest element goes to second last position and so on.
+In every pass, we process only those elements that have already not moved to correct position. After k passes, the largest k elements must have been moved to the last k positions.
+In a pass, we consider remaining elements and compare all adjacent and swap if larger element is before a smaller element. If we keep doing this, we get the largest (among the remaining elements) at its correct position.
+
+Divide-and-Conquer Sorting Algorithms
+
+1. Merge sort - divide the entire array to tokens and sort it
+
+Merge sort is a sorting algorithm that follows the divide-and-conquer approach. It works by recursively dividing the input array into smaller subarrays and sorting those subarrays then merging them back together to obtain the sorted array.
+
+In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.
